@@ -25,7 +25,7 @@ deno run -A npm:create-ccfk@latest
 
 ## Options
 
-### `-t, --template <template>`
+#### `-t, --template <template>`
 
 You can specify the desired template from the command line. This is useful for automation, where you'd like to skip any interactive prompts.
 
@@ -33,7 +33,7 @@ You can specify the desired template from the command line. This is useful for a
 npm create ccfk@latest ./my-ccfk-app -- --template hello-world-app
 ```
 
-### `-i, --install`
+#### `-i, --install`
 
 Install dependencies after cloning template.
 
@@ -41,7 +41,7 @@ Install dependencies after cloning template.
 npm create ccfk@latest ./my-ccfk-app -- --install
 ```
 
-### `-p, --pm <pnpm|bun|deno|npm|yarn>`
+#### `-p, --pm <pnpm|bun|deno|npm|yarn>`
 
 Allows you to specify which package manager to use.
 
@@ -49,7 +49,7 @@ Allows you to specify which package manager to use.
 npm create ccfk@latest ./my-ccfk-app -- --pm pnpm
 ```
 
-### `-o, --offline`
+#### `-o, --offline`
 
 Use the local cache instead of fetching the latest templates.
 
