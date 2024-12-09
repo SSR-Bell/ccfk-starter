@@ -1,4 +1,4 @@
-# CCGFK Starter Templates
+# CCFK Starter Templates
 
 Create a CCFK application from starter templates.
 
