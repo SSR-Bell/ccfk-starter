@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": false,
+    "noImplicitReturns": false,
+    "noImplicitThis": false,
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "esModuleInterop": true,
+    "strictNullChecks": false,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "inlineSources": true,
+    "allowJs": false,
+    "checkJs": false,
+    "emitDeclarationOnly": false,
+    "allowArbitraryExtensions": true,
+  },
+  "include": ["vite.config.ts"]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "@ssrbell/starter-app",
+  "description": "Starter CCFK App ",
+  "private": true,
+  "version": "4.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node ./tools/post-build.cjs",
+    "check": "npx biome check --write ./src",
+    "lint": "npx biome lint --write ./src ",
+    "format": "npx biome format --write ./src ",
+    "changeset": "npx changeset",
+    "release": "npx changeset version && npx changeset publish && git push --follow-tags",
+    "test": "vitest",
+    "preview": "vite preview",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@nokia-csf-uxr/ccfk": "latest",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@changesets/cli": "^2.27.10",
+    "@commitlint/cli": "^19.6.0",
+    "@commitlint/config-conventional": "^19.6.0",
+    "@types/lodash": "^4.14.181",
+    "@types/react": "18.0.14",
+    "@types/react-dom": "18.0.5",
+    "@types/react-window": "^1.8.8",
+    "@vitejs/plugin-react": "^4.2.1",
+    "highcharts": "11.1.0",
+    "highcharts-react-official": "3.2.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.10",
+    "typescript": "5.6.2",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.8"
+  }
+}
