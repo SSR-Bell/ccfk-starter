@@ -2,7 +2,7 @@
   "name": "@ssrbell/starter-app",
   "description": "Starter CCFK App ",
   "private": true,
-  "version": "4.0.1",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
