@@ -237,8 +237,6 @@ const DashboardPanel = () => {
 					<ExpandableSearchBar
 						typeSelectionHandler={handleTypeSelection}
 						regionSelectionHandler={handleRegionSelection}
-						alarmSelectionHandler={handleAlarmLevelSelection}
-						alarmCounts={alarmCounts}
 					/>
 					<SimpleTable
 						selectedTypes={selectedTypes}
@@ -247,8 +245,6 @@ const DashboardPanel = () => {
 				</div>
 				<div className="dashboard-columm">
 					<AlarmCountsPanel
-						typeSelectionHandler={handleTypeSelection}
-						regionSelectionHandler={handleRegionSelection}
 						alarmSelectionHandler={handleAlarmLevelSelection}
 						alarmCounts={alarmCounts}
 					></AlarmCountsPanel>

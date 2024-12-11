@@ -30,8 +30,6 @@ const TOGGLES = [
 type ExpandableSearchBarProps = {
 	typeSelectionHandler: (selection: string[]) => void;
 	regionSelectionHandler: (selection: string) => void;
-	alarmSelectionHandler: (selection: string) => void;
-	alarmCounts: AlarmCounts;
 };
 
 const ExpandableSearchBar = (props: ExpandableSearchBarProps) => {

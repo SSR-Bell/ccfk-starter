@@ -56,14 +56,12 @@ const StoryChip = ({ status, label }) => (
 	</InfoChip>
 );
 
-type ExpandableSearchBarProps = {
-	typeSelectionHandler: (selection: string[]) => void;
-	regionSelectionHandler: (selection: string) => void;
+type AlarmCountsProps = {
 	alarmSelectionHandler: (selection: string) => void;
 	alarmCounts: AlarmCounts;
 };
 
-const AlarmCountsPanel = (props: ExpandableSearchBarProps) => {
+const AlarmCountsPanel = (props: AlarmCountsProps) => {
 	const { alarmSelectionHandler, alarmCounts } = props;
 
 	const [selectedAlarm, setSelectedAlarm] = useState<string>('All Alarms');
