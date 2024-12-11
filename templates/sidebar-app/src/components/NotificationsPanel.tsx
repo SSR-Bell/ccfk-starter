@@ -1,4 +1,5 @@
-import React, { forwardRef, useEffect, useRef, useState } from 'react';
+import type React from 'react';
+import { forwardRef, useEffect, useRef, useState } from 'react';
 import _findIndex from 'lodash/findIndex';
 import Notifications, {
 	NotificationsCount,
@@ -175,7 +176,7 @@ const NotificationsPanel = forwardRef<HTMLElement, NotificationsPanelProps>(
 			return () => clearInterval(timer);
 		}, [showNotificationsPopup, notifications]);
 
-		let count = notifications.filter((n) => n.new).length;
+		const count = notifications.filter((n) => n.new).length;
 		const showBadge = () => notifications.some((n) => n.new);
 		const showCount = () => {
 			if (count === 0) return;

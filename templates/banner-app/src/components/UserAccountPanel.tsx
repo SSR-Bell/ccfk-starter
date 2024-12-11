@@ -29,7 +29,8 @@ const UserAccountPanel = () => {
 	const appContext = useContext(AppContainerContext);
 	const popupRef = useRef(null);
 	const listRef = useRef(null);
-	const [showUserAccountSummary, setShowUserAccountSummary] = useState<boolean>(false);
+	const [showUserAccountSummary, setShowUserAccountSummary] =
+		useState<boolean>(false);
 	const [showDialog, setShowDialog] = useState<boolean>(false);
 
 	const handleCloseDialog = () => {

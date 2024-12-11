@@ -10,7 +10,6 @@ import AppBanner, {
 	AppBannerContent,
 } from '@nokia-csf-uxr/ccfk/AppBanner';
 
-
 import UserAccountPanel from './UserAccountPanel';
 import QuickHelpPanel from './QuickHelpPanel';
 import NotificationsPanel from './NotificationsPanel';
@@ -32,7 +31,10 @@ type AppContainerContext = {
 	productDescription: string;
 };
 
-export const AppContainerContext = createContext<AppContainerContext>({	productName, productDescription	});
+export const AppContainerContext = createContext<AppContainerContext>({
+	productName,
+	productDescription,
+});
 
 const AppContainer = () => {
 	return (

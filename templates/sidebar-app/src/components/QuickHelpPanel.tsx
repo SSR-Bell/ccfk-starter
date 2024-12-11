@@ -1,4 +1,5 @@
-import React, { useRef, useState } from 'react';
+import type React from 'react';
+import { useRef, useState } from 'react';
 import Typography from '@nokia-csf-uxr/ccfk/Typography';
 import QuickHelp, {
 	QuickHelpTitle,

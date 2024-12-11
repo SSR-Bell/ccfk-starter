@@ -111,13 +111,13 @@ const parseTime = (time: any) => {
 	return time instanceof Date ? resolvedTime : time;
 };
 
-export type NotificationsPanelProps = React.ComponentPropsWithRef<'div'>  & {
-	/** For Dialog, he reference to the app element, used to apply blur filter and aria-hidden attribute for accessibility. 
-	 * `appElement` is required if `ariaHideApp` is set to `false`. 
-	 * 
+export type NotificationsPanelProps = React.ComponentPropsWithRef<'div'> & {
+	/** For Dialog, he reference to the app element, used to apply blur filter and aria-hidden attribute for accessibility.
+	 * `appElement` is required if `ariaHideApp` is set to `false`.
+	 *
 	 * */
 	appRef?: React.RefObject<HTMLElement>;
-}
+};
 
 const NotificationsPanel = forwardRef<HTMLElement, NotificationsPanelProps>(
 	(props: NotificationsPanelProps, ref) => {
